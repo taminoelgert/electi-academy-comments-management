@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public class CommentServiceImpl implements CommentService {
 
     @Autowired
-    CommentRepository commentRepository;
+    private CommentRepository commentRepository;
 
     @Override
     public List<CommentResponseModel> list(UUID userId) {

@@ -18,7 +18,7 @@ public class CommentController {
     private static final Logger LOG = LoggerFactory.getLogger(CommentController.class);
 
     @Autowired
-    CommentService commentService;
+    private CommentService commentService;
 
     //lists all comments of user
     @GetMapping()

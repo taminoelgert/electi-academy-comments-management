@@ -18,11 +18,11 @@ public class Comment {
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @Column(columnDefinition = "BINARY(16)")
-    UUID commentId;
+    private UUID commentId;
 
-    String message;
+    private String message;
 
-    Date creationDate;
+    private Date creationDate;
 
-    UUID userId;
+    private UUID userId;
 }
